@@ -1,13 +1,15 @@
 from string import ascii_lowercase as lowercase
 
-alphabet = lowercase 
+alphabet = lowercase
 message = input("Please enter a message you want to be encrypted \n")
-newMessage = []
+newMessage = ""
 
 for letter in message:
-    position = alphabet.find(letter)
-    newPosition = (position + 13) % 26
-    newMessage.append(alphabet[newPosition])
+    if letter in alphabet:
+        position = alphabet.find(letter)
+        newPosition = (position + 13) % 26
+        newMessage += alphabet[newPosition]
+    else:
+        newMessage += letter
 
-print("".join(newMessage))
-# cipherKey = input()
+print(newMessage)
