@@ -1,6 +1,8 @@
 import turtle
 from turtle import *
 
+answer = input("Would you like to see a star or a circle? ").lower()
+
 def drawSquare(turtle):
     counter = 1
     while counter <=4:
@@ -11,7 +13,7 @@ def drawSquare(turtle):
 def drawing():
     window = turtle.Screen()
     window.bgcolor("red")
-    brad = turtle.Turtle()
+    brad = Turtle()
     brad.speed(15)
     brad.shape("turtle")
     brad.color("yellow")
@@ -34,5 +36,4 @@ def starShape():
     end_fill()
     exitonclick()
 
-drawing()
-# starShape()
+drawing() if answer == "circle" else starShape()
