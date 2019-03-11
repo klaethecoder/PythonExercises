@@ -1,7 +1,7 @@
-import os
+import os 
 from profanityfilter import ProfanityFilter
 
-pf = ProfanityFilter()
+pf = ProfanityFilter() 
 
 def readText():
     here = os.getcwd()
