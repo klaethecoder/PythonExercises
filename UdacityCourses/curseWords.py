@@ -1,12 +1,7 @@
 import os
-import urllib.request as url
-import profanity
-
-from profanity_filter import ProfanityFilter
+from profanityfilter import ProfanityFilter
 
 pf = ProfanityFilter()
-out = pf.censor("That's bullshit!")
-print(out)
 
 def readText():
     here = os.getcwd()
@@ -16,11 +11,7 @@ def readText():
     checkProfanity(contents)
 
 def checkProfanity(text):
-   connection =  url.urlopen("http://www.wdylike.appspot.com/?q="+ text)
-   output = connection.read()
-   print(output)
-   connection.close()
+    censored = pf.censor(text)
+    print(censored)
 
-
-
-# readText()
+readText()
