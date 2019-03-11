@@ -12,6 +12,9 @@ def readText():
 
 def checkProfanity(text):
     censored = pf.censor(text)
-    print(censored)
+    if "*" in censored:
+        print("There is at lease one curse word in the text")
+    else:
+        print("No curse words found in the text.")
 
 readText()
