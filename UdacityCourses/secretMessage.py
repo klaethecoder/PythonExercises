@@ -7,7 +7,6 @@ def encrypt():
     for file in files:
         one = random.choice(string.digits)
         two = random.choice(string.digits)
-        # print("%s%s%s" % (one, two, file))
         os.rename(file, (one+two+file))
     os.chdir(path)
 
@@ -19,5 +18,10 @@ def decrypt():
         os.rename(name, name.strip(string.digits))
     os.chdir(path)
 
-encrypt()
-# decrypt()
+answer = input("Press (1) to encrypt or (2) to decrypt...\n")
+
+if answer == "1":
+    encrypt() 
+    print()
+else:
+     decrypt()
