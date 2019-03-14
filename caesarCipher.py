@@ -35,6 +35,25 @@ def decoderRing(message,key):
             newMessage += letter
     print(newMessage)
 
-stuff = input("What is kind of message do you need to decode? \n")
-key = int(input("What is the key that you used? \n"))-1
-decoderRing(stuff, key)
+
+answer = input("Press 1 to encrypt a message or 2 to dycrypt a message... \n")
+
+try:
+    answer = int(answer)
+    if answer == 1 or answer == 2:
+        if answer == 1:
+            key = int(input("What is the key that you used? \n"))-1
+            cipherEncryption(key)
+        else:
+            message = input("What is kind of message do you need to decode? \n")
+            key = int(input("What is the key that you used? \n"))-1
+            decoderRing(message, key)
+
+
+
+    else:
+        print("Please choose the numbers listed")
+
+
+except ValueError:
+    print("Please choose the numbers listed")
