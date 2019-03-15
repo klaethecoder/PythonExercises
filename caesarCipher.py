@@ -1,6 +1,5 @@
 from string import ascii_lowercase as lowercase
 
-
 def cipherEncryption(key):
     alphabet = lowercase
     message = input("Please enter a message you want to be encrypted \n").lower()
@@ -16,12 +15,6 @@ def cipherEncryption(key):
 
     print(newMessage)
 
-# try:
-#     usersKey = int(input("What cipher key would you like? (Pick a number 1-26)"))
-#     cipherEncryption(usersKey-1)
-
-# except ValueError:
-#     print("Please choose a number between 1-26")
 
 def decoderRing(message,key):
     alphabet = lowercase
@@ -48,8 +41,6 @@ try:
             message = input("What is kind of message do you need to decode? \n")
             key = int(input("What is the key that you used? \n"))-1
             decoderRing(message, key)
-
-
 
     else:
         print("Please choose the numbers listed")
