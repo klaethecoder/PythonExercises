@@ -2,6 +2,8 @@ import webbrowser, omdb
 import fresh_tomatoes as ft
 
 class Movie():
+    """This Class provides a way for the user to save their movie information."""
+    VALIDRATINGS = ["G", "PG", "PG-13", "R"]
     def __init__(self, title, storyLine, poster, trailer):
         self.title = title
         self.poster = poster
@@ -19,4 +21,5 @@ schoolOfRock = Movie("School of Rock", "After being kicked out of his rock band,
 # toyStory.showTrailer()
 
 movies = [toyStory, schoolOfRock]
-ft.open_movies_page(movies)
+# ft.open_movies_page(movies)
+print(Movie.VALIDRATINGS)
