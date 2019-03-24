@@ -1,3 +1,4 @@
+from string import digits
 def reverseString(phrase):
     str = ""
     for letter in phrase:
@@ -12,3 +13,8 @@ def sayHello(name="User"):
 reverseString("Ryan")
 sayHello()
 sayHello("Ryan")
+
+number = "0,123,456,2324,678,345,667"
+for i in number:
+    if i in digits:
+        print("The number is: {}".format(i))
