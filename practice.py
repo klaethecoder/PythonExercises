@@ -49,4 +49,27 @@ for meal in menu:
             print(item)
         print("-"*20)
 
-        
+# Create a list of items (you may use either strings or numbers in the list),
+# then create an iterator using the iter() function.
+#
+# Use a for loop to loop "n" times, where n is the number of items in your list.
+# Each time round the loop, use next() on your list to print the next item.
+#
+# hint: use the len() function rather than counting the number of items in the list.
+
+def looper(el):
+    times = len(el)
+    myIter = iter(el)
+    while times >= 1:
+        print(next(myIter))
+        times -= 1
+
+# looper("1234567890")
+# print("*"*20)
+# looper([1,2,3,4,5,6,7,8,9,0])
+
+element = [1,2,3,4,5,6,7,8,9,0]
+times = len(element)
+myIter = iter(element)
+for item in range(times):
+    print(next(myIter))
