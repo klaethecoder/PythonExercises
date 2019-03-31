@@ -73,3 +73,8 @@ times = len(element)
 myIter = iter(element)
 for item in range(times):
     print(next(myIter))
+
+for i in range(9,1000,9):
+    print(i)
+
+print(list(range(9,1000,9)))
