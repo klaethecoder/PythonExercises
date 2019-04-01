@@ -78,3 +78,8 @@ for i in range(9,1000,9):
     print(i)
 
 print(list(range(9,1000,9)))
+
+# Tuples are immutable.
+t = "a", "b", "c"
+
+print(t)
