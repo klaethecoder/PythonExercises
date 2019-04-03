@@ -83,3 +83,22 @@ print(list(range(9,1000,9)))
 t = "a", "b", "c"
 
 print(t)
+
+# Python reads things from right to left and that is why there is no errors with the variables below
+
+a = b = c = d = 12
+
+print(c)
+
+# Multiple variable assignments
+e,f = 13,14
+
+print(e)
+print(f)
+
+# Swapping the variable values
+
+e,f = f,e
+
+print(e)
+print(f)
