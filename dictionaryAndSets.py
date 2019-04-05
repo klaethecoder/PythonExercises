@@ -1,6 +1,6 @@
 fruit = {
     "orange": "a sweet, orange, citrus fruit",
-    "apple": "goof for making cider",
+    "apple": "good for making cider",
     "lemon": "a sour, yellow citrus fruit",
     "grape": "sweet fruit, that grows in bunches",
     "lime": "a sour, green citrus fruit"
@@ -19,4 +19,11 @@ for name in fruit:
 
 del fruit["lemon"]
 print(fruit)
+
+while True:
+    dictKey = input("Please enter a fruit:\n")
+    if dictKey == "quit":
+        break
+    description = fruit.get(dictKey)
+    print(description)
 
