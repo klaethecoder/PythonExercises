@@ -20,9 +20,10 @@ for name in fruit:
 del fruit["lemon"]
 print(fruit)
 
-# while True:
-#     dictKey = input("Please enter a fruit:\n")
-#     if dictKey == "quit":
-#         break
-#     description = fruit.get(dictKey)
-#     print(description)
+while True:
+    dictKey = input("Please enter a fruit:\n")
+    if dictKey == "quit":
+        break
+    description = fruit.get(dictKey, "We don't have a ")
+    print(description)
+
