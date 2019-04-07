@@ -39,3 +39,22 @@ print("*"*40)
 for values in fruit.values():
     print(values)
 
+print(fruit.items())
+
+# Join and how it can be used.
+
+alph = ["a", "b", "c", "d"]
+
+newStr = ", ".join(alph)
+print(newStr)
+
+from string import ascii_lowercase as letters
+from string import digits as numbers
+
+
+newStr = ", ".join(letters)
+print(newStr)
+
+newStr = " mississippi, ".join(numbers)
+print(newStr)
+
