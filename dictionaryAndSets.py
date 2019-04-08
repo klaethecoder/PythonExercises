@@ -58,3 +58,18 @@ print(newStr)
 newStr = " mississippi, ".join(numbers)
 print(newStr)
 
+# this is how you can turn a list into a dictionary
+
+stuff = [1,2,3,4,5]
+
+def listToDict(arr):
+    dictionary = {}
+    for item in arr:
+        index = arr.index(item)
+        dictionary[index] = item
+    print(dictionary)
+
+names = ["Ryan", "Jenelle", "Addie", "Jayel"]
+listToDict(names)
+
+directions = { "NORTH" : "N", "SOUTH" : "S", "EAST" : "E", "WEST": "W"}
