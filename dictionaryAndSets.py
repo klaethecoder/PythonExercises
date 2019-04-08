@@ -73,3 +73,11 @@ names = ["Ryan", "Jenelle", "Addie", "Jayel"]
 listToDict(names)
 
 directions = { "NORTH" : "N", "SOUTH" : "S", "EAST" : "E", "WEST": "W"}
+
+userStuff = input("Please type a direction...\n").upper()
+words = userStuff.split()
+
+for word in words:
+    if word in directions:
+        userStuff = directions[word]
+print(userStuff)
