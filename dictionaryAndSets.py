@@ -26,20 +26,21 @@ print(fruit)
 #         break
 #     description = fruit.get(dictKey, "We don't have a ")
 #     print(description)
-for i in range(10):
-    for snack in fruit:
-        print(snack + " is " + fruit[snack])
-    print("-"*40)
 
-for keys in fruit.keys():
-    print(keys)
+# for i in range(10):
+#     for snack in fruit:
+#         print(snack + " is " + fruit[snack])
+#     print("-"*40)
 
-print("*"*40)
+# for keys in fruit.keys():
+#     print(keys)
 
-for values in fruit.values():
-    print(values)
+# print("*"*40)
 
-print(fruit.items())
+# for values in fruit.values():
+#     print(values)
+
+# print(fruit.items())
 
 # Join and how it can be used.
 
@@ -58,7 +59,7 @@ print(newStr)
 newStr = " mississippi, ".join(numbers)
 print(newStr)
 
-# this is how you can turn a list into a dictionary
+# This is how you can turn a list into a dictionary
 
 stuff = [1,2,3,4,5]
 
@@ -74,10 +75,21 @@ listToDict(names)
 
 directions = { "NORTH" : "N", "SOUTH" : "S", "EAST" : "E", "WEST": "W"}
 
-userStuff = input("Please type a direction...\n").upper()
-words = userStuff.split()
+# userStuff = input("Please type a direction...\n").upper()
+# words = userStuff.split()
 
-for word in words:
-    if word in directions:
-        userStuff = directions[word]
-print(userStuff)
+# for word in words:
+#     if word in directions:
+#         userStuff = directions[word]
+# print(userStuff)
+
+veg = {"cabbage" : "Every child's favorite",
+        "sprouts": "mmmm lovely",
+        "spinach": "More Fruits please"}
+
+print(fruit, veg)
+print("-*"*40)
+# The update command allows the two dictionaries to be combined.
+veg.update(fruit)
+
+print(veg)
