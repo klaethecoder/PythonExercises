@@ -93,3 +93,9 @@ print("-*"*40)
 veg.update(fruit)
 
 print(veg)
+
+newDict = fruit.copy()
+newDict.update(veg)
+
+print(newDict)
+
