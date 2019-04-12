@@ -107,3 +107,11 @@ print(farmAnimals)
 for animal in farmAnimals:
     print(animal)
 
+import random
+
+arr = []
+while len(arr) < 12:
+    arr.append(random.choice(range(30)))
+
+print(arr)
+print(set(arr))
