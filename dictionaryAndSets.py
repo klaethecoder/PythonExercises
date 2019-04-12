@@ -99,3 +99,11 @@ newDict.update(veg)
 
 print(newDict)
 
+# Learning Sets: Don't have duplicates and arent in order
+
+farmAnimals = {"sheep", "cow","hen"}
+
+print(farmAnimals)
+for animal in farmAnimals:
+    print(animal)
+
