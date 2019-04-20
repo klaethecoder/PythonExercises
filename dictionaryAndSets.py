@@ -115,3 +115,12 @@ while len(arr) < 12:
 
 print(arr)
 print(set(arr))
+
+even = set(range(0,40,2))
+odd = set(range(1,40,2))
+
+# This adds some new numbers to the existing sets. 
+even.add(1)
+odd.add(2)
+print(even & odd)
+
