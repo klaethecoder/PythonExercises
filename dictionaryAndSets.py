@@ -123,4 +123,16 @@ odd = set(range(1,40,2))
 even.add(1)
 odd.add(2)
 print(even & odd)
+print(even.intersection(odd))
+
+print("-"*40)
+print(even - odd)
+print(even.difference(odd))
+
+print("-"*40)
+print(even.symmetric_difference(odd))
+print(even ^ odd)
+
+print("-"*40)
+
 
